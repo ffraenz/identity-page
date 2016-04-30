@@ -41,7 +41,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
-    <body onload="document.getElementsByTagName('body')[0].className+=' preload-complete';">
+    <body onload="setTimeout(function(){document.getElementsByTagName('body')[0].className+=' preload-complete';},500);">
 
         <section class="section-hero">
             <div class="image">
@@ -85,7 +85,7 @@
             </div>
         </section>
 
-        <script type="text/javascript">
+        <script>
         var style = 'background: #ff00aa; padding: 5px; font-size: 13px; color: #ffffff';
         console.log('%cSite developed by @ffraenz', style);
         console.log('%cAnimations seasoned by @sekundenkraft', style);
