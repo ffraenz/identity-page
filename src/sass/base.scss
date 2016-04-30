@@ -1,0 +1,39 @@
+
+@import "reset";
+@import "constant";
+@import "font";
+
+* {
+    -webkit-text-size-adjust: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    outline: none;
+    box-sizing: border-box;
+    animation-play-state: paused;
+}
+
+.preload-complete * {
+    animation-play-state: running;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: $color-background-dark;
+    overflow: hidden;
+}
+
+::selection {
+    background: $color-action;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+@import "hero";
