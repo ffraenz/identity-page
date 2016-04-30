@@ -18,6 +18,13 @@
         }
     }
 
+    // hide image and text div until preload
+    //  is complete and animation starts
+    .image,
+    .text {
+        display: none;
+    }
+
     .image {
         position: absolute;
         top: 0;
@@ -28,7 +35,6 @@
 
         &,
         img {
-            animation-name: hero-image-container;
             animation-fill-mode: both;
             animation-duration: $hero-animation-delay + 1.76s;
             animation-timing-function: cubic-bezier(0.160, 0.070, 0.185, 1.000);
@@ -40,13 +46,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             height: 100%;
-            animation-name: hero-image;
         }
 
         &:after {
             content: '';
             display: block;
-            animation-name: hero-fade;
             animation-fill-mode: both;
             animation-delay: $hero-animation-delay + 1.08s;
             animation-duration: 0.68s;
@@ -113,7 +117,6 @@
                 vertical-align: bottom;
                 line-height: 1;
 
-                animation-name: hero-icon;
                 animation-fill-mode: both;
                 animation-delay: $icon-animation-delay;
                 animation-duration: 0.68s;
@@ -137,6 +140,20 @@
                 }
             }
         }
+    }
+
+    .preload-complete & {
+
+        .image,
+        .text {
+            display: block;
+        }
+
+        .image { animation-name: hero-image-container; }
+        .image img { animation-name: hero-image; }
+        .image:after { animation-name: hero-fade; }
+        .text h1, p { animation-name: hero-text; }
+        .actions li { animation-name: hero-icon; }
     }
 
     // large desktops
@@ -195,11 +212,6 @@
             bottom: auto;
             width: auto;
             height: 75%;
-            animation-name: hero-image-container-vertical;
-
-            img {
-                animation-name: hero-image-vertical;
-            }
 
             &:after {
                 top: auto;
@@ -208,7 +220,6 @@
                 bottom: 0;
                 height: 30%;
                 width: auto;
-                animation-name: hero-fade-vertical;
                 background: linear-gradient(to top, $color-background-dark, transparent);
             }
         }
@@ -224,11 +235,6 @@
             line-height: 1.5;
             text-align: center;
 
-            h1,
-            p {
-                animation-name: hero-text-vertical;
-            }
-
             p {
                 margin-bottom: 10px;
 
@@ -243,11 +249,15 @@
 
             .actions {
                 margin: 17px auto 0;
-
-                li {
-                    animation-name: hero-icon-vertical;
-                }
             }
+        }
+
+        .preload-complete & {
+            .image { animation-name: hero-image-container-vertical; }
+            .image img { animation-name: hero-image-vertical; }
+            .image:after { animation-name: hero-fade-vertical; }
+            .text h1, p { animation-name: hero-text-vertical; }
+            .actions li { animation-name: hero-icon-vertical; }
         }
     }
 }
