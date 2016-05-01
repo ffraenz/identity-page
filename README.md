@@ -1,6 +1,13 @@
 IdentityPage
 ============
 
+A responsive single-page website featuring a large image, a small introductory text and references to social media.
+
+## Reuses
+
+- [Fränz Friederes](https://fraenz.frieder.es/)
+- [Daniel Pazatka](http://sekundenkraft.com/)
+
 ## License
 
 The MIT License (MIT)

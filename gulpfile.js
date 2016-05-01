@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 var packageMeta = require('./package.json');
 
 var source = [
+    'src/js/vendor/*.js',
     'src/js/*.js',
     'src/js/*/*.js',
     'src/js/*/*/*.js',

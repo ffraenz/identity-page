@@ -7,7 +7,7 @@
     -webkit-text-size-adjust: none;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    outline: none;
+    outline: 1px solid transparent;
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: $color-background-dark;
+    background: $color-background;
     overflow: hidden;
 }
 

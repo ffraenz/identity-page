@@ -2,7 +2,7 @@
 .section-hero {
     height: 100%;
     padding: 0;
-    background: $color-background-dark;
+    background: $color-background;
     user-select: none;
 
     &, a {
@@ -15,6 +15,23 @@
 
         &:hover {
             color: $color-action;
+        }
+    }
+
+    .tooltip {
+        display: block;
+        position: absolute;
+        transform: translate(5px, 10px);
+        opacity: 1.0;
+        user-select: none;
+        transition-property: opacity;
+        transition-duration: 0.2s;
+        color: $color-action;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        &.hidden {
+            opacity: 0.0;
         }
     }
 
@@ -32,6 +49,7 @@
         bottom: 0;
         width: 65%;
         overflow: hidden;
+        background: #000000;
 
         &,
         img {
@@ -59,7 +77,7 @@
             right: 0;
             bottom: 0;
             width: 80px;
-            background: radial-gradient(farthest-side at 100% 50%, rgba($color-background-dark, 0.5), transparent);
+            background: radial-gradient(farthest-side at 100% 50%, rgba($color-background, 0.5), transparent);
         }
     }
 
@@ -103,7 +121,7 @@
             $icon-each-animation-delay: 0.20s;
             display: table;
             font-size: 1.5em;
-            margin-top: 13px;
+            margin: 10px 0 0 -5px;
 
             &:after {
                 content: '';
@@ -112,8 +130,8 @@
             }
 
             li {
+                position: relative;
                 float: left;
-                margin-left: 10px;
                 vertical-align: bottom;
                 line-height: 1;
 
@@ -122,15 +140,34 @@
                 animation-duration: 0.68s;
                 animation-timing-function: cubic-bezier(0.175, 0.535, 0.285, 1.000);
 
-                &:first-child {
-                    margin-left: 0;
+                &.action-belittle {
+                    font-size: 0.85em;
                 }
 
-                &.action-belittle {
-                    position: relative;
-                    top: 3px;
-                    padding-left: 3px;
-                    font-size: 0.8em;
+                &.separator {
+                    width: 1px;
+                    height: 32px;
+                    margin: 0 10px;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 1px;
+                        height: 20px;
+                        transform: translate(0, -50%);
+                        background: rgba($color-text, 0.3);
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 32px;
                 }
 
                 @for $i from 1 through 10 {
@@ -181,22 +218,42 @@
     // mobile devices
     @media (max-width: 750px) {
 
+        .tooltip {
+            display: none;
+        }
+
         .text {
+
+            p a {
+                background: rgba($color-text, 0.2);
+                border-radius: 2px;
+                padding: 0 2px;
+
+                &:hover {
+                    background: $color-text;
+                    color: $color-background;
+                }
+            }
 
             .actions {
                 font-size: 30px;
-                margin-top: 9px;
-                margin-left: -7px;
+                margin: 8px 0 0 -8px;
 
                 li {
-                    margin-left: 0;
-                    width: 44px;
-                    height: 44px;
-                    text-align: center;
-                    line-height: 44px;
 
-                    &.action-belittle {
-                        top: 0;
+                    &.separator {
+                        height: 44px;
+                        margin: 0 12px;
+
+                        &:after {
+                            height: 26px;
+                        }
+                    }
+
+                    a {
+                        width: 44px;
+                        height: 44px;
+                        line-height: 44px;
                     }
                 }
             }
@@ -220,7 +277,7 @@
                 bottom: 0;
                 height: 30%;
                 width: auto;
-                background: linear-gradient(to top, $color-background-dark, transparent);
+                background: linear-gradient(to top, $color-background, transparent);
             }
         }
 
@@ -248,7 +305,7 @@
             }
 
             .actions {
-                margin: 17px auto 0;
+                margin: 18px auto 0;
             }
         }
 
