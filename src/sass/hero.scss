@@ -121,7 +121,7 @@
             $icon-each-animation-delay: 0.20s;
             display: table;
             font-size: 1.5em;
-            margin: 10px 0 0 -5px;
+            margin: 11px 0 0 -5px;
 
             &:after {
                 content: '';
@@ -199,6 +199,18 @@
         .text {
             font-size: 19px;
             font-weight: 300;
+
+            p {
+                margin-top: 13px;
+            }
+
+            .actions {
+                margin-top: 16px;
+
+                li {
+                    margin-right: 7px;
+                }
+            }
         }
 
     }
