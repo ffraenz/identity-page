@@ -1,6 +1,6 @@
 <!--
 Designed & developed by Fränz Friederes: http://fraenz.frieder.es
-Animations seasoned by Daniel Pazatka: http://sekundenkraft.com
+Animations seasoned by Daniel Zat: http://danielzat.com
 Source code under the MIT license: https://github.com/ffraenz/IdentityPage
 -->
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ Source code under the MIT license: https://github.com/ffraenz/IdentityPage
         <meta property="og:type" content="profile">
         <meta property="og:url" content="https://fraenz.frieder.es/">
         <meta property="og:title" content="Fränz Friederes">
-        <meta property="og:image" content="https://fraenz.frieder.es/images/hero.jpg">
+        <meta property="og:image" content="https://fraenz.frieder.es/images/hero1440x960px.jpg">
         <meta property="og:description" content="Code, data and design enthusiast · web worker from Luxembourg · Interaction Design student in Berlin · board member of Eppelduerfer Jugend, AStA BTK, ACEL · loving brother · queer · Currently looking for an internship in Berlin">
 
         <!-- Twitter Cards -->
@@ -38,7 +38,7 @@ Source code under the MIT license: https://github.com/ffraenz/IdentityPage
             "familyName": "Friederes",
             "jobTitle": "Web worker",
             "url": "https://fraenz.frieder.es",
-            "image": "https://fraenz.frieder.es/images/hero.jpg",
+            "image": "https://fraenz.frieder.es/images/hero1440x960px.jpg",
             "sameAs": [
                 "https://www.facebook.com/ffraenz",
                 "https://twitter.com/ffraenz",
@@ -58,16 +58,18 @@ Source code under the MIT license: https://github.com/ffraenz/IdentityPage
 
         <section class="section-hero">
             <div class="image">
-                <img src="images/hero.jpg" alt="Fränz Friederes">
+                <img src="images/hero1440x960px.jpg"
+                     srcset="images/hero2880x1920px.jpg 1440w"
+                     alt="Fränz Friederes">
             </div>
             <div class="text">
                 <h1>Fr&auml;nz Friederes, 22</h1>
                 <p>
-                    Code, data and design enthusiast &middot; web worker<br>
-                    from Luxembourg &middot; Interaction Design student in<br>
-                    Berlin &middot; board member of <a href="http://eppelduerferjugend.lu/" target="_blank">Eppelduerfer Jugend</a>,<br>
-                    <a href="https://asta-btk.de/" target="_blank">AStA BTK</a>, <a href="http://acel.lu/" target="_blank">ACEL</a>  &middot; loving brother &middot; queer <span class="break-dot">&middot;</span><br>
-                    Currently looking for an internship in Berlin
+                    Code, design &amp; web enthusiast from LUX <span class="break-dot">&middot;</span><br>
+                    Currently doing an internship at <a href="https://www.taikonauten.com/" target="_blank">Taikonauten</a> <span class="break-dot">&middot;</span><br>
+                    Interaction Design student at <a href="http://www.btk-fh.de/" target="_blank">BTK FH</a> in Berlin <span class="break-dot">&middot;</span><br>
+                    President of <a href="http://eppelduerferjugend.lu/" target="_blank">Eppelduerfer Jugend</a> <span class="break-dot">&middot;</span><br>
+                    loving brother &middot; gay
                 </p>
                 <ul class="actions">
                     <li>
@@ -80,6 +82,12 @@ Source code under the MIT license: https://github.com/ffraenz/IdentityPage
                         <a title="GitHub" href="https://github.com/ffraenz" target="_blank">
                             <i class="fa fa-github"></i>
                             <span class="sr-only">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="action-belittle">
+                        <a title="Medium" href="https://medium.com/@ffraenz" target="_blank">
+                            <i class="fa fa-medium"></i>
+                            <span class="sr-only">Medium</span>
                         </a>
                     </li>
                     <li class="action-belittle">
@@ -105,6 +113,16 @@ Source code under the MIT license: https://github.com/ffraenz/IdentityPage
             document.write('<script src="js/jquery.min.js"></scr' + 'ipt>');
         </script>
         <script src="js/script.min.js"></script>
+
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4208952-20', 'auto');
+        ga('send', 'pageview');
+        </script>
 
     </body>
 </html>
