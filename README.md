@@ -3,12 +3,12 @@
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-A responsive, minimal, single-page website featuring a large image, a small introductory text and references to social media.
+A responsive, minimal, single-page website featuring a large image, a small introductory text and references to social media. It may be the perfect business card for the web.
 
 ## Reuses
 
 - [Fränz Friederes](https://fraenz.frieder.es/)
-- [Daniel Pazatka](http://sekundenkraft.com/)
+- [Daniel Zat](http://danielzat.com/)
 - [Patrick Hummel](https://patrickhummel.com/)
 - [Lisa Friederes](https://lisa.frieder.es/)
 - [Oleg Klassen](http://www.ol3g.de/)
