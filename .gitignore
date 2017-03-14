@@ -1,3 +1,5 @@
-node_modules
-.sass-cache
-._*
+/node_modules
+/.sass-cache
+/js
+/css
+/cv.pdf

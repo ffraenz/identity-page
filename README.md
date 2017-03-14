@@ -1,20 +1,28 @@
-IdentityPage
-============
 
-A responsive single-page website featuring a large image, a small introductory text and references to social media.
+# identity-page
+
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
+A responsive, minimal, single-page website featuring a large image, a small introductory text and references to social media.
 
 ## Reuses
 
 - [Fränz Friederes](https://fraenz.frieder.es/)
 - [Daniel Pazatka](http://sekundenkraft.com/)
+- [Patrick Hummel](https://patrickhummel.com/)
+- [Lisa Friederes](https://lisa.frieder.es/)
+- [Oleg Klassen](http://www.ol3g.de/)
+- [Tu-Phuong Ly](https://tuphuongly.com/)
 
-## License
+## Build
 
-The MIT License (MIT)
+Make sure Node.js and npm are installed on the system you want to build this project. Run following commands inside the repository:
 
-Copyright (c) 2016 Fränz Friederes <[fraenz@frieder.es](mailto:fraenz@frieder.es)>
+```
+npm install
+gulp build
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Copy jQuery to `js/jquery.min.js`.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Add your information to `index.html`.
